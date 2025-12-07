@@ -17,7 +17,7 @@ class SearchResult
         public readonly int $totalResults,
         public readonly int $page,
         public readonly int $perPage,
-        public readonly string $totalPages
+        public readonly int $totalPages
     )
     {
         
