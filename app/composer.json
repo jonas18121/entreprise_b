@@ -1,8 +1,14 @@
 {
     "type": "project",
     "license": "proprietary",
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../recherche-entreprises-bundle"
+        }
+    ],
     "require": {
         "php": ">=8.2",
         "ext-ctype": "*",
@@ -42,7 +48,8 @@
         "symfony/web-link": "7.3.*",
         "symfony/yaml": "7.3.*",
         "twig/extra-bundle": "^2.12|^3.0",
-        "twig/twig": "^2.12|^3.0"
+        "twig/twig": "^2.12|^3.0",
+        "vendorcustom/recherche-entreprises-bundle": "dev-main"
     },
     "config": {
         "allow-plugins": {

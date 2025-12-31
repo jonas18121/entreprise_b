@@ -53,7 +53,7 @@ class EntrepriseSearchService
             return SearchResult::fromArray($data);
         }
         catch(\Exception $e) {
-            $this->logger->info('Erreur lors de la recherche entreprise', [
+            $this->logger->error('Erreur lors de la recherche entreprise', [
                 'query' => $query,
                 'error' => $e->getMessage(),
             ]);

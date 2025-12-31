@@ -321,5 +321,8 @@
     },
     "twig/extra-bundle": {
         "version": "v3.22.1"
+    },
+    "vendorcustom/recherche-entreprises-bundle": {
+        "version": "dev-main"
     }
 }

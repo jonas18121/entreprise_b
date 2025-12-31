@@ -8,3 +8,6 @@
 /.bash_history
 
 /docker-compose.yml
+
+/recherche-entreprises-bundle/
+/.composer/
