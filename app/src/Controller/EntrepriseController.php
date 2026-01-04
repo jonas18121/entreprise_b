@@ -2,17 +2,17 @@
 
 namespace App\Controller;
 
-use App\Service\EntrepriseSearchService;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Jonas18121\RechercheEntreprisesBundle\Client\EntrepriseSearchClientInterface;
 
 final class EntrepriseController extends AbstractController
 {
     public function __construct(
-        private readonly EntrepriseSearchService $entrepriseSearchService
+        private readonly EntrepriseSearchClientInterface $entrepriseClient
     )
     {
     }
@@ -27,7 +27,7 @@ final class EntrepriseController extends AbstractController
         }
 
         try {
-            $result = $this->entrepriseSearchService->search($query, 1, 10);
+            $result = $this->entrepriseClient->search($query, 1, 10);
 
             return $this->json([
                 'total' => $result->totalResults,
@@ -52,7 +52,7 @@ final class EntrepriseController extends AbstractController
     public function detail(string $siren): JsonResponse
     {
         try {
-            $entreprise = $this->entrepriseSearchService->findBySiren($siren);
+            $entreprise = $this->entrepriseClient->findBySiren($siren);
 
             if (!$entreprise) {
                 return $this->json(['error' => 'Entreprise non trouvée'], 404);

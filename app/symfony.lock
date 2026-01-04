@@ -35,6 +35,9 @@
             "migrations/.gitignore"
         ]
     },
+    "jonas18121/recherche-entreprises-bundle": {
+        "version": "v0.1.0"
+    },
     "phpunit/phpunit": {
         "version": "11.5",
         "recipe": {
@@ -321,8 +324,5 @@
     },
     "twig/extra-bundle": {
         "version": "v3.22.1"
-    },
-    "vendorcustom/recherche-entreprises-bundle": {
-        "version": "dev-main"
     }
 }

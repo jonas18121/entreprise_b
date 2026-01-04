@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "05a7a231647d911f8966f40ace6d67b6",
+    "content-hash": "8b29fe29aa993de3c74056b4df564812",
     "packages": [
         {
             "name": "composer/semver",
@@ -1263,6 +1263,62 @@
                 }
             ],
             "time": "2025-03-06T22:45:56+00:00"
+        },
+        {
+            "name": "jonas18121/recherche-entreprises-bundle",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jonas18121/recherche-entreprises-bundle.git",
+                "reference": "f59f8dede6ced396f84d9e6d7a1a54112247b084"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jonas18121/recherche-entreprises-bundle/zipball/f59f8dede6ced396f84d9e6d7a1a54112247b084",
+                "reference": "f59f8dede6ced396f84d9e6d7a1a54112247b084",
+                "shasum": ""
+            },
+            "require": {
+                "symfony/config": "^7.3",
+                "symfony/console": "^7.3",
+                "symfony/dependency-injection": "^7.3",
+                "symfony/http-client": "^7.3",
+                "symfony/http-kernel": "^7.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^11.0",
+                "symfony/phpunit-bridge": "^7.3"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Jonas18121\\RechercheEntreprisesBundle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "my name",
+                    "email": "contact@jonas18121.com"
+                }
+            ],
+            "description": "Bundle Symfony pour l'API Recherche d'entreprises du gouvernement français",
+            "keywords": [
+                "Siren",
+                "api",
+                "bundle",
+                "entreprise",
+                "sirene",
+                "symfony"
+            ],
+            "support": {
+                "issues": "https://github.com/jonas18121/recherche-entreprises-bundle/issues",
+                "source": "https://github.com/jonas18121/recherche-entreprises-bundle/tree/v0.1.0"
+            },
+            "time": "2026-01-04T16:54:38+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -7718,58 +7774,6 @@
             "time": "2025-10-29T15:56:47+00:00"
         },
         {
-            "name": "vendorcustom/recherche-entreprises-bundle",
-            "version": "dev-main",
-            "dist": {
-                "type": "path",
-                "url": "../recherche-entreprises-bundle",
-                "reference": "be374f70d4466c4066760cac9073d8d6aa6d9a45"
-            },
-            "require": {
-                "symfony/config": "^7.3",
-                "symfony/console": "^7.3",
-                "symfony/dependency-injection": "^7.3",
-                "symfony/http-client": "^7.3",
-                "symfony/http-kernel": "^7.3"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^11.0",
-                "symfony/phpunit-bridge": "^7.3"
-            },
-            "type": "symfony-bundle",
-            "autoload": {
-                "psr-4": {
-                    "Vendorcustom\\RechercheEntreprisesBundle\\": "src/"
-                }
-            },
-            "autoload-dev": {
-                "psr-4": {
-                    "Vendorcustom\\RechercheEntreprisesBundle\\Tests\\": "tests/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "my name",
-                    "email": "contact@vendorcustom.com"
-                }
-            ],
-            "description": "Bundle Symfony pour l'API Recherche d'entreprises du gouvernement français",
-            "keywords": [
-                "api",
-                "bundle",
-                "entreprise",
-                "siren",
-                "sirene",
-                "symfony"
-            ],
-            "transport-options": {
-                "relative": true
-            }
-        },
-        {
             "name": "webmozart/assert",
             "version": "1.12.1",
             "source": {
@@ -10135,7 +10139,7 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
